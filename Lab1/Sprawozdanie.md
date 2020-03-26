@@ -7,6 +7,15 @@ Tablica nieuporządkowana| 1| N
 Kopiec |logN |logN
 nieosiągalna| 1| 1
 
+
+
+| Struktura danych |  Wstaw | Usuń  |
+|---|---|---|---|---|
+|  Tablica uporządkowana | N  | 1  |
+| Tablica nieuporządkowana  | 1  |  N |
+|  Kopiec |logN   | logN  | 
+
+
 ## Zad 4.1
 
 ### ==> Klasa FindMistakes
