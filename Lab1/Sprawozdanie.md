@@ -1,6 +1,11 @@
 # Sprawozdanie Lab1 Michał Wawrzyńczak
 
-W folderach obecnie zawarte są całe foldery projektów z InteliJ, jeśli będzie to duży problem usunę niepotrzebne pliki
+W zadaniu 4.3 Metody działeją w czasie logarytmicznym ponieważ struktura oparta jest na kopcu, a na wykładzie było powiedziane że:
+Struktura |danych Wstaw| Usuń minimalny
+Tablica uporządkowana| N| 1
+Tablica nieuporządkowana| 1| N
+Kopiec |logN |logN
+nieosiągalna| 1| 1
 
 ## Zad 4.1
 
