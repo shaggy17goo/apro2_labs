@@ -1,12 +1,6 @@
 # Sprawozdanie Lab1 Michał Wawrzyńczak
 
 W zadaniu 4.3 Metody działeją w czasie logarytmicznym ponieważ struktura oparta jest na kopcu, a na wykładzie było powiedziane że:
-Struktura |danych Wstaw| Usuń minimalny
-Tablica uporządkowana| N| 1
-Tablica nieuporządkowana| 1| N
-Kopiec |logN |logN
-nieosiągalna| 1| 1
-
 
 
 | Struktura danych |  Wstaw | Usuń  |
