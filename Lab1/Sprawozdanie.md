@@ -4,7 +4,7 @@ W zadaniu 4.3 Metody działeją w czasie logarytmicznym ponieważ struktura opar
 
 
 | Struktura danych |  Wstaw | Usuń  |
-|---|---|---|---|---|
+|---|---|---|
 |  Tablica uporządkowana | N  | 1  |
 | Tablica nieuporządkowana  | 1  |  N |
 |  Kopiec |logN   | logN  | 
