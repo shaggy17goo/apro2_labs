@@ -15,6 +15,7 @@ W zadaniu 4.3 Metody działeją w czasie logarytmicznym ponieważ struktura opar
 | Tablica nieuporządkowana  | 1  |  N |
 |  Kopiec |logN   | logN  | 
 
+Przy wstawianiu i usuwaniu sprawdzana jest tylko jedna "gałąź"
 
 ## Zad 4.1
 
