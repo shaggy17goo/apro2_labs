@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
@@ -8,6 +9,8 @@ public class BinaryHeap {
     private int n;
     int type;
     String path;
+    ArrayList<Word> times=new ArrayList<Word>();
+
 
     public BinaryHeap(int type) {
         this(type, 1);
@@ -142,6 +145,7 @@ public class BinaryHeap {
 
     public void importTxt(String path) throws FileNotFoundException {
         String line;
+        boolean was;
         try {
             File xmlFile = new File(path);
             Scanner scan = new Scanner(xmlFile);
@@ -152,11 +156,31 @@ public class BinaryHeap {
                     if(words[i].equals(""))
                         continue;
                     this.insert(new Word(words[i]));
+                    was=false;
+                    int j;
+                    for (j = 0; j < times.size() ; j++) {
+                        if(words[i].equals(times.get(j).string))
+                            was=true;
+                            break;
+                    }
+                    if(!was)
+                        times.add(new Word(words[i]));
+                    else times.get(j).times++;
                 }
             }
             scan.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+    public String maxTimes(){
+        String ret="";
+        Word max =times.get(0);
+        for (int i = 1; i <times.size() ; i++) {
+            if(times.get(i).times >max.times)
+                max=times.get(i);
+        }
+        ret = max.string+" "+max.times;
+        return ret;
     }
 }
