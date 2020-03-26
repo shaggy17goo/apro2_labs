@@ -1,0 +1,10 @@
+  <?xml version="1.0" encoding="ISO8859-1" ?>
+  <CD>
+    <TITLE>Still got the blues</TITLE>
+    <ARTIST>Gary More</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>Virgin redords</COMPANY>
+    <PRICE>10.20
+    <YEAR>1990</YEAR>
+  </CD>
+  </PRICE> <!-- PRICE closed too late -->

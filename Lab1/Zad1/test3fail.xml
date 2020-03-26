@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO8859-1" ?> 
+ <CDf> <!-- typo, no closing CDf -->
+    <TITLE>Greatest Hits</TITLE>
+    <ARTIST>Dolly Parton</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>RCA</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1982</YEAR>
+  </CD>

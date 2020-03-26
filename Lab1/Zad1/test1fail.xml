@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO8859-1" ?> 
+ <CD>
+    <TITLE>Empire Burlesque</TITLE>
+    <ARTIST>Bob Dylan</ARTIST>
+    <COUNTRY>USA</COUNTRY>
+    <COMPANY>Columbia</COMPANY>
+    <PRICE>10.90</YEAR> <!-- no opening YEAR -->
+    <YEAR>1985</YEAR>
+  </CD>

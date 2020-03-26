@@ -1,0 +1,9 @@
+  <?xml version="1.0" encoding="ISO8859-1" ?>
+  <CD>
+    <TITLE>Hide your heart</TITLE>
+    <ARTIST>Bonnie Tylor</ARTIST>
+    <COUNTRY>UK</COUNTRY>
+    <COMPANY>CBS Records</COMPANY>
+    <PRICE>9.90</PRICE>
+    <YEAR>1988</YER> <!-- typo, no opening YER -->
+  </CD>
