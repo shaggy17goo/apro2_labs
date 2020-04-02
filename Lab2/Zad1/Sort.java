@@ -137,7 +137,7 @@ public class Sort {
         return ret;
     }
 
-    public String showTab(int [] tab) {
+    public String showTab(int[] tab) {
         String ret = "";
         for (int x : tab) {
             ret += (x + ", ");
