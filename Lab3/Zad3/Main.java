@@ -1,3 +1,5 @@
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.time.Instant;
 import java.util.Random;
 
@@ -25,8 +27,8 @@ public class Main {
     public static KeyStd generateRandomKeyStd(){
         Random random = new Random();
         String text1=generateRandomString();
-        int a1=random.nextInt(10), a2=random.nextInt(10), a3=random.nextInt(10), a4=random.nextInt(10);
-        double d1=10*random.nextDouble(), d2=10*random.nextDouble();
+        int a1=random.nextInt(1000), a2=random.nextInt(1000), a3=random.nextInt(1000), a4=random.nextInt(1000);
+        double d1=random.nextDouble(), d2=random.nextDouble();
         return new KeyStd(text1,a1,a2,a3,a4,d1,d2);
     }
     /**
@@ -35,15 +37,16 @@ public class Main {
     public static KeyTst generateRandomKeyTst(){
         Random random = new Random();
         String text1=generateRandomString();
-        int a1=random.nextInt(10), a2=random.nextInt(10), a3=random.nextInt(10), a4=random.nextInt(10);
-        double d1=10*random.nextDouble(), d2=10*random.nextDouble();
+        int a1=random.nextInt(1000), a2=random.nextInt(1000), a3=random.nextInt(1000), a4=random.nextInt(1000);
+        double d1=random.nextDouble(), d2=random.nextDouble();
         return new KeyTst(text1,a1,a2,a3,a4,d1,d2);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
         HashST hashST = new HashST();
         KeyStd[] stdTab = new KeyStd[1000000];
         KeyTst[] tstTab = new KeyTst[1000000];
 
+        PrintWriter save = new PrintWriter("wyniki.txt");
         for (int l = 0; l <10; l++) {
             //Generowanie kluczyStd
             for (int i = 0; i < 1000000; i++) {
@@ -64,8 +67,15 @@ public class Main {
             long endTimeStd = Instant.now().toEpochMilli();
             long timeElapsedStd = endTimeStd - startTimeStd;
 
+            //wyszukiwanie kluczyStd
+            long startTimeStdF = Instant.now().toEpochMilli();
+            for (int i = 0; i < 1000000; i++) {
+                hashST.putStd(stdTab[i]);
+            }
+            long endTimeStdF = Instant.now().toEpochMilli();
+            long timeElapsedStdF = endTimeStdF - startTimeStdF;
 
-            ///Dodawanie kluczyTst
+            //Dodawanie kluczyTst
             long startTimeTst = Instant.now().toEpochMilli();
             for (int i = 0; i < 1000000; i++) {
                 hashST.putTst(tstTab[i]);
@@ -73,9 +83,23 @@ public class Main {
             long endTimeTst = Instant.now().toEpochMilli();
             long timeElapsedTst = endTimeTst - startTimeTst;
 
-            System.out.println("Czas wykonywania z standardowym hashCodem: " + timeElapsedStd);
-            System.out.println("Czas wykonywania z testowym hashCodem: " + timeElapsedTst);
-            System.out.println();
+            //wyszukiwanie kluczyTst
+            long startTimeTstF = Instant.now().toEpochMilli();
+            for (int i = 0; i < 1000000; i++) {
+                hashST.putTst(tstTab[i]);
+            }
+            long endTimeTstF = Instant.now().toEpochMilli();
+            long timeElapsedTstF = endTimeTstF - startTimeTstF;
+
+            save.println("Czas dodowania z standardowym hashCodem: " + timeElapsedStd);
+            save.println("Czas wyszukiwania z standardowym hashCodem: " + timeElapsedStdF);
+            save.println("Czas dodawania z testowym hashCodem: " + timeElapsedTst);
+            save.println("Czas wyszukiwania z testowym hashCodem: " + timeElapsedTstF);
+            save.println();
+            //Wniosek:
+            //Funkcjie tworzce tablice dzialaja w podobnym czasie, aczkolwiek troche szybsza wydaje sie testowa funkcja hashujaca
+            //Podobnie sytuacja wyglda z wyszukiwaniem elementow w tablicach
         }
+        save.close();
     }
 }

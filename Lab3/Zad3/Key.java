@@ -33,7 +33,7 @@ class KeyTst extends Key {
     @Override
     public int hashCode() {
         int hash=1;
-        hash=((text1.hashCode() + a1*1000000+a2*100000+a3*10000+a4*1000 + (int)(d1*100) + (int)(d2*10))%(Integer.MAX_VALUE/10));
+        hash=((text1.hashCode() + a1*1000+a2*20000+a3*300000+a4*5000000 + (int)(d1*600) + (int)(d2*30))%(Integer.MAX_VALUE/10));
         if(hash>=0)
             return hash;
         else

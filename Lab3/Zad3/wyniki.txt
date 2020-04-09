@@ -1,0 +1,50 @@
+Czas dodowania z standardowym hashCodem: 109
+Czas wyszukiwania z standardowym hashCodem: 134
+Czas dodawania z testowym hashCodem: 79
+Czas wyszukiwania z testowym hashCodem: 77
+
+Czas dodowania z standardowym hashCodem: 103
+Czas wyszukiwania z standardowym hashCodem: 116
+Czas dodawania z testowym hashCodem: 149
+Czas wyszukiwania z testowym hashCodem: 144
+
+Czas dodowania z standardowym hashCodem: 109
+Czas wyszukiwania z standardowym hashCodem: 101
+Czas dodawania z testowym hashCodem: 92
+Czas wyszukiwania z testowym hashCodem: 76
+
+Czas dodowania z standardowym hashCodem: 212
+Czas wyszukiwania z standardowym hashCodem: 183
+Czas dodawania z testowym hashCodem: 156
+Czas wyszukiwania z testowym hashCodem: 106
+
+Czas dodowania z standardowym hashCodem: 216
+Czas wyszukiwania z standardowym hashCodem: 230
+Czas dodawania z testowym hashCodem: 218
+Czas wyszukiwania z testowym hashCodem: 128
+
+Czas dodowania z standardowym hashCodem: 109
+Czas wyszukiwania z standardowym hashCodem: 170
+Czas dodawania z testowym hashCodem: 169
+Czas wyszukiwania z testowym hashCodem: 147
+
+Czas dodowania z standardowym hashCodem: 202
+Czas wyszukiwania z standardowym hashCodem: 320
+Czas dodawania z testowym hashCodem: 267
+Czas wyszukiwania z testowym hashCodem: 175
+
+Czas dodowania z standardowym hashCodem: 205
+Czas wyszukiwania z standardowym hashCodem: 203
+Czas dodawania z testowym hashCodem: 195
+Czas wyszukiwania z testowym hashCodem: 178
+
+Czas dodowania z standardowym hashCodem: 242
+Czas wyszukiwania z standardowym hashCodem: 343
+Czas dodawania z testowym hashCodem: 329
+Czas wyszukiwania z testowym hashCodem: 176
+
+Czas dodowania z standardowym hashCodem: 195
+Czas wyszukiwania z standardowym hashCodem: 182
+Czas dodawania z testowym hashCodem: 85
+Czas wyszukiwania z testowym hashCodem: 81
+
