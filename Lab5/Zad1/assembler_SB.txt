@@ -1,0 +1,97 @@
+Classfile /C:/Users/michal/Desktop/GIT/apro2-lab-5/Zad1_2/out/production/Zad1_2/Main.class
+  Last modified 29 kwi 2020; size 645 bytes
+  SHA-256 checksum 73721d0481d40db619a7e8c9144a45ef49d8f6ec7107cab86b0ebc37858f242a
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // Main
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 1
+Constant pool:
+   #1 = Methodref          #8.#27         // java/lang/Object."<init>":()V
+   #2 = String             #28            // jeden
+   #3 = String             #29            // dwa
+   #4 = Class              #30            // java/lang/StringBuilder
+   #5 = Methodref          #4.#31         // java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+   #6 = Methodref          #4.#32         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #7 = Class              #33            // Main
+   #8 = Class              #34            // java/lang/Object
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               LocalVariableTable
+  #14 = Utf8               this
+  #15 = Utf8               LMain;
+  #16 = Utf8               main
+  #17 = Utf8               ([Ljava/lang/String;)V
+  #18 = Utf8               args
+  #19 = Utf8               [Ljava/lang/String;
+  #20 = Utf8               str1
+  #21 = Utf8               Ljava/lang/String;
+  #22 = Utf8               str2
+  #23 = Utf8               bulider
+  #24 = Utf8               Ljava/lang/StringBuilder;
+  #25 = Utf8               SourceFile
+  #26 = Utf8               Main.java
+  #27 = NameAndType        #9:#10         // "<init>":()V
+  #28 = Utf8               jeden
+  #29 = Utf8               dwa
+  #30 = Utf8               java/lang/StringBuilder
+  #31 = NameAndType        #9:#35         // "<init>":(Ljava/lang/String;)V
+  #32 = NameAndType        #36:#37        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #33 = Utf8               Main
+  #34 = Utf8               java/lang/Object
+  #35 = Utf8               (Ljava/lang/String;)V
+  #36 = Utf8               append
+  #37 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+{
+  public Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 1: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LMain;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=4, args_size=1
+         0: ldc           #2                  	// wczytanie stringa "jeden"
+         2: astore_1				// wrzucenie refernecji do stringa "jeden" na stos
+         3: ldc           #3            	// wczytanie stringa dwa
+         5: astore_2				// wrzucenie refernecji do stringa "dwa" na stos
+         6: new           #4                  	// stworzenie instancji klasy - class java/lang/StringBuilder
+         9: dup					// zduplikowanie wartości refernecji na górze stusu
+        10: aload_1				// załadowanie stringa "jeden"
+        11: invokespecial #5                  	// inicjalizacja instancji klasy StringBulider ze stringiem "jeden" Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+        14: astore_3				// zapisanie refernecji do StringBulidera na stosie
+        15: aload_3				// Wczytanie string bulidera ze stosu
+        16: aload_2				// Wczytanie stringa "dwa" ze stosu
+        17: invokevirtual #6                 	// Połączenie "jeden" z "dwa"  - Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        20: pop					// zdjęcie ostatniej wartości ze stosu
+        21: return				// koniec
+      LineNumberTable:
+        line 3: 0
+        line 4: 3
+        line 5: 6
+        line 6: 15
+        line 7: 21
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      22     0  args   [Ljava/lang/String;
+            3      19     1  str1   Ljava/lang/String;
+            6      16     2  str2   Ljava/lang/String;
+           15       7     3 bulider   Ljava/lang/StringBuilder;
+}
+SourceFile: "Main.java"

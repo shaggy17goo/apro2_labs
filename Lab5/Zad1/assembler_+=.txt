@@ -1,0 +1,104 @@
+Classfile /C:/Users/michal/Desktop/GIT/apro2-lab-5/Zad1_1/out/production/Zad1_1/Main.class
+  Last modified 29 kwi 2020; size 922 bytes
+  SHA-256 checksum 296ee2c0c9591fd2e6d618e3b98abffeb746c0c0dcaca7e7cd11991af499ddad
+  Compiled from "Main.java"
+public class Main
+  minor version: 0
+  major version: 55
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #5                          // Main
+  super_class: #6                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 2, attributes: 3
+Constant pool:
+   #1 = Methodref          #6.#23         // java/lang/Object."<init>":()V
+   #2 = String             #24            // jeden
+   #3 = String             #25            // dwa
+   #4 = InvokeDynamic      #0:#29         // #0:makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+   #5 = Class              #30            // Main
+   #6 = Class              #31            // java/lang/Object
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               LocalVariableTable
+  #12 = Utf8               this
+  #13 = Utf8               LMain;
+  #14 = Utf8               main
+  #15 = Utf8               ([Ljava/lang/String;)V
+  #16 = Utf8               args
+  #17 = Utf8               [Ljava/lang/String;
+  #18 = Utf8               str1
+  #19 = Utf8               Ljava/lang/String;
+  #20 = Utf8               str2
+  #21 = Utf8               SourceFile
+  #22 = Utf8               Main.java
+  #23 = NameAndType        #7:#8          // "<init>":()V
+  #24 = Utf8               jeden
+  #25 = Utf8               dwa
+  #26 = Utf8               BootstrapMethods
+  #27 = MethodHandle       6:#32          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #28 = String             #33            // \u0001\u0001
+  #29 = NameAndType        #34:#35        // makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #30 = Utf8               Main
+  #31 = Utf8               java/lang/Object
+  #32 = Methodref          #36.#37        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #33 = Utf8               \u0001\u0001
+  #34 = Utf8               makeConcatWithConstants
+  #35 = Utf8               (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+  #36 = Class              #38            // java/lang/invoke/StringConcatFactory
+  #37 = NameAndType        #34:#42        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #38 = Utf8               java/lang/invoke/StringConcatFactory
+  #39 = Class              #44            // java/lang/invoke/MethodHandles$Lookup
+  #40 = Utf8               Lookup
+  #41 = Utf8               InnerClasses
+  #42 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #43 = Class              #45            // java/lang/invoke/MethodHandles
+  #44 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #45 = Utf8               java/lang/invoke/MethodHandles
+{
+  public Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 2: 0
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LMain;
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=3, args_size=1
+         0: ldc           #2            	// String jeden Wczytanie stringa "jeden"
+         2: astore_1				// wrzucenie referencji do stringa "jeden" na stos
+         3: ldc           #3              	// String dwa Wczytanie stringa dwa
+         5: astore_2				// wrzucenie referencji do stringa "dwa" na stos
+         6: aload_1				// załadowanie strina "jeden" ze stosu
+         7: aload_2				// załadowanie strina "dwa" ze stosu
+         8: invokedynamic #4,  0              	// Połączenie stringa "jeden" ze stringiem "dwa"
+        13: astore_1				// zapisanie referencji do "jedendwa: w miejsce stringa "jeden"
+        14: return				// koniec
+      LineNumberTable:
+        line 4: 0
+        line 5: 3
+        line 6: 6
+        line 7: 14
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0      15     0  args   [Ljava/lang/String;
+            3      12     1  str1   Ljava/lang/String;
+            6       9     2  str2   Ljava/lang/String;
+}
+SourceFile: "Main.java"
+InnerClasses:
+  public static final #40= #39 of #43;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #27 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #28 \u0001\u0001
