@@ -65,4 +65,5 @@ jest "lepsze" jedyne co mogę powiedzić to, że klasa StringBulider do przechow
 stosu, natomiest klasa String podczas konkatenacji wykorzustuje "stałą pulę stringów"
 
 W Internecie znalazłem krótkie zestawienie w postaci tabeli prównujące te dwie metody łaczenia stringów.
+
 ![stringVsStrBuild](/uploads/3b954bfd35af522fc86ee4771d6bca61/stringVsStrBuild.png)
