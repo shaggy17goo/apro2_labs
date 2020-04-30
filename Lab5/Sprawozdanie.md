@@ -74,6 +74,13 @@ Zadaniem było przeanalizowanie i opisanie kodu, oraz opis w jaki sposób genero
 
 **Hasło: N9Qd:7U_2020**
 
+W programie hasło generowane jest w następujący sposób:
+1. Podany 7-znakowy ciąg znaków jest modyfikowany w taki sposób, że każdy znak tego ciągu zamieniany jest na kolejny znak w tablicy kodowej
+2. Z systemu zczytywana jest aktualy rok i parsowany jako int
+3. Ciąg z punktu 1 i liczba z punktu 2 są konkatenowana bo wcześniejszym wstawieniu znaku "_" pomiędzy te dwie wartości
+4. Powstały w punkcie 3 String dodawany jest do jedno elementowej tablicy stingów
+5. Tablica z punktu 4 jest naszym hasłem.
+
 
 - Klasa Main
 ```java
