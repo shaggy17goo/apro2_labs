@@ -4,7 +4,7 @@
 ## Zad1
 W tym zadaniu napisałem dwa proste programy jeden łączący dwa stingi przy pomocy operatora += a drugi używający klasy StringBulider:
 
-* +=
+- +=
 ```java
 public class Main {
     public static void main(String[] args) {
@@ -75,7 +75,7 @@ Zadaniem było przeanalizowanie i opisanie kodu, oraz opis w jaki sposób genero
 **Hasło: N9Qd:7U_2020**
 
 W programie hasło generowane jest w następujący sposób:
-1. Podany 7-znakowy ciąg znaków jest modyfikowany w taki sposób, że każdy znak tego ciągu zamieniany jest na kolejny znak w tablicy kodowej
+1. Podany 7-znakowy ciąg znaków jest modyfikowany w taki sposób, że każdy znak tego ciągu zamieniany jest na kolejny znak w tablicy kodowej (szyfr cezara o offsecie = 1)
 2. Z systemu zczytywana jest aktualy rok i parsowany jako int
 3. Ciąg z punktu 1 i liczba z punktu 2 są konkatenowana bo wcześniejszym wstawieniu znaku "_" pomiędzy te dwie wartości
 4. Powstały w punkcie 3 String dodawany jest do jedno elementowej tablicy stingów
@@ -157,7 +157,17 @@ public class Coder {
 ```
 
 ## Zad3
+W tym zadaniu mieliśmy przeanalizować "złośliwe oprogramowanie". zaczęliśmy od rozpakowania pliku jar i jego zdekompilowania, następnie naszym zadaniem było poopisywanie poszczególne operacje wykonywane podczas działania programu oraz odpowiednio ponazywać metody i zmienne
+W kodzie programu starałem się dokładnie odszyfrować i pokomentować poszczególne fragmenty. Głownym celem działania programu jest:
+1. Odszyfrowanie linków i nazw plików/katalogów zaszyfrowanych przy pomocy algorytmu AES
+2. Pobranie i zapisanie pliku .zip w pamięci komputera
+3. Rozpakowanie pobranego pliku (jest to zipBomba czyli plik zip o małej wadze, który po rozpakowaniu posiada bardzi duży rozmiar)
+4. Wyłączenie komputera
 
+Po opisaniu poszczególnych metod zdecydowałem się na uruchomienie programu na maszynie wirtualnej, efekt działania był taki jak oczekiwany
+
+
+- Skomentowany kod klasy run
 ```java
 //
 // Source code recreated from a .class file by IntelliJ IDEA
