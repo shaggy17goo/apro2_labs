@@ -81,6 +81,8 @@ W programie hasło generowane jest w następujący sposób:
 4. Powstały w punkcie 3 String dodawany jest do jedno elementowej tablicy stingów
 5. Tablica z punktu 4 jest naszym hasłem.
 
+Wykonanie tego programu mogło by skutkować "zaśmiecenie" całego dysku. Skutkiem wypakowywanie takiej bomby jest też to, że antyVirus ma dużą ilość plików do przeanalizowania, z czym może nie wyrabiać czasowo.
+Uruchamiając właściwego wirusa na koniec wypakowywania bomby może prowadzić do tego że antyVirus nie przeanalizuje i wykryje właściwego wirusa
 
 - Klasa Main
 ```java
