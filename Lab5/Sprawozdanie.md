@@ -30,6 +30,7 @@ public class Main {
 Nastęnie wygenerować z obu kod assemblera obu programów, opisać i porównać: 
 
 - +=
+```
     	 0: ldc           #2            	// String jeden Wczytanie stringa "jeden"
          2: astore_1				// wrzucenie referencji do stringa "jeden" na stos
          3: ldc           #3              	// String dwa Wczytanie stringa dwa
@@ -39,9 +40,10 @@ Nastęnie wygenerować z obu kod assemblera obu programów, opisać i porównać
          8: invokedynamic #4,  0              	// Połączenie stringa "jeden" ze stringiem "dwa"
         13: astore_1				// zapisanie referencji do "jedendwa: w miejsce stringa "jeden"
         14: return				// koniec    
-
+```
 
 - StringBulider
+```
          0: ldc           #2                  	// wczytanie stringa "jeden"
          2: astore_1				// wrzucenie refernecji do stringa "jeden" na stos
          3: ldc           #3            	// wczytanie stringa dwa
@@ -56,6 +58,7 @@ Nastęnie wygenerować z obu kod assemblera obu programów, opisać i porównać
         17: invokevirtual #6                 	// Połączenie "jeden" z "dwa"  - Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
         20: pop					// zdjęcie ostatniej wartości ze stosu
         21: return				// koniec
+```
 
 Porównując kody assemblerowe tych dwóch metod konkatenowania srtringów, ciężko mi jednoznacznie stwierdzić które z rozwiązań
 jest "lepsze" jedyne co mogę powiedzić to, że klasa StringBulider do przechowywanie danych stringa wykorzystuje strukturę
