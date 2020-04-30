@@ -72,7 +72,7 @@ W Internecie znalazłem krótkie zestawienie w postaci tabeli prównujące te dw
 ## Zad2
 Zadaniem było przeanalizowanie i opisanie kodu, oraz opis w jaki sposób generowane jest hasło do naszego programu
 
-*Hasło: N9Qd:7U_2020*
+**Hasło: N9Qd:7U_2020**
 
 
 - Klasa Main
